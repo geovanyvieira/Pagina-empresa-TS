@@ -1,0 +1,277 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fundo preto para teste */
+    color: #fff; /* Texto branco */
+    line-height: 1.6;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #121212; /* Cor de fundo do container */
+}
+/* Conteúdo do lado esquerdo */
+.hero-left {
+    max-width: 50%;
+}
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+Aqui está o código para criar uma seção semelhante à imagem enviada, com o título, subtítulo, botões e estatísticas à esquerda, e uma imagem com texto à direita:
+HTML
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Automação Comercial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero-section">
+        <div class="hero-left">
+            <h1 class="hero-title">Sistema De Automação Comercial</h1>
+            <p class="hero-subtitle">Use a tecnologia para o planejamento financeiro da sua empresa!</p>
+            <div class="hero-buttons">
+                <a href="#" class="button primary-button">Saiba Mais</a>
+                <a href="#" class="button secondary-button">Browse Properties</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h2>200+</h2>
+                    <p>Clientes Satisfeitos</p>
+                </div>
+                <div class="stat">
+                    <h2>10k+</h2>
+                    <p>Empresas utilizando</p>
+                </div>
+                <div class="stat">
+                    <h2>30+</h2>
+                    <p>Anos de Experiência</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="mockup.png" alt="Mockup do sistema" class="hero-image">
+        </div>
+    </section>
+</body>
+</html>
+
+CSS
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    line-height: 1.6;
+}
+
+.section-parte2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ .texto-caixote{
+    font-size: small;
+    margin-top: 10px; /* Ajusta o espaçamento entre a imagem e o título */
+    text-align: center;
+ }
+
+.imagem-caixote{
+    width: 23%;
+    height: auto;
+}
+
+.caixote{
+    flex: 1 1 calc(25% - 10px);
+    text-align: center;
+    background-color: #1c1c1c;
+    padding: 30px 50px;
+    border-radius: 20px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #121212; /* Cor de fundo do container */
+}
+
+/* Conteúdo do lado esquerdo */
+.hero-left {
+    max-width: 50%;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #bbb; /* Subtítulo em cinza claro */
+}
+
+.hero-buttons {
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.primary-button {
+    background-color: #6200ea; /* Cor roxa */
+    color: #fff;
+}
+
+.primary-button:hover {
+    background-color: #3700b3;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #6200ea;
+    border: 2px solid #6200ea;
+}
+
+.secondary-button:hover {
+    background-color: #6200ea;
+    color: #fff;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 20px;
+}  
+
+.stat {
+    text-align: center;
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 100px;
+}
+.stat h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+.hero-right {
+    max-width: 50%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para o header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000; /* Fundo preto */
+  /* color: #fff;  Texto branco 
+    font-family: Arial, sans-serif;*/
+}
+
+/* Logo e nome da empresa */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px; /* Espaço entre o logo e o texto */
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navegação */
+.navigation .nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px; /* Espaço entre os itens do menu */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Botão ativo */
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover nos links */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header,
+.nav-list {
+    width: 100%;
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o header na página */
+}
+
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 1em;
+}
